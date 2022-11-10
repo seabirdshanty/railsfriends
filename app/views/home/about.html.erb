@@ -1,0 +1,12 @@
+<h1>About Us</h1>
+
+<p>
+	<%= @about_me %> <br />
+	This site was created by <%= @gimme_user[0].first_name %> <%= @gimme_user[0].last_name %> on <%= @gimme_user[0].created_at %>.<br />
+	There are currently <%= @gimme_user.count %> registered users and <%= @gimme_friend.count + 1 %> friends added to the database.
+</p>
+
+<p> 
+	IF YOU WANNA SHOW DATA ON THE PAGE,<br />
+	PASS THE VARIABLES THROUGH THE CONTRILLERS, NERD!
+</p>

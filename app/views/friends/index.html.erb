@@ -1,0 +1,25 @@
+<table class="table table-striped table-bordered table-hover">
+  <thead class="table-dark">
+      <tr>
+        <th>Name</th>
+        <th>Email</th> 
+        <th>Phone</th>
+        <th>Twitter</th>
+        <th>Created By</th>
+        <th colspan="1"></th>
+      </tr>
+  </thead>
+
+  <tbody>
+   <% @friends.each do |friend| %>
+      <%= render friend %>
+      <td>
+        <%= button_to "Destroy", friend, method: :delete, class:"btn btn-outline-danger", data: { turbo: false } %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to "New friend", new_friend_path, class:"btn btn-primary" %>
+

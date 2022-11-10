@@ -1,0 +1,17 @@
+<div id="<%= dom_id @friend %>" class="p-5 mb-4 bg-light rounded-3">
+  <h2 class="display-5 fw-bold"> <%= @friend.first_name %> <%= @friend.last_name %> </h2>
+
+  <p>
+    <%= @friend.email %> | <%= @friend.phone %> | Twitter: <a href="http://twitter.com/<%= @friend.twitter %>">@<%= @friend.twitter %></a>
+  </p>
+
+  <div>
+    <%= link_to "Edit this friend", edit_friend_path(@friend), class:"btn btn-primary" %> 
+    <%= link_to "Back to friends", friends_path, class:"btn btn-secondary"%><br />
+
+    <%= button_to "Destroy this friend", @friend, class:"btn btn-danger", method: :delete %>
+  </div>
+
+
+</div>
+

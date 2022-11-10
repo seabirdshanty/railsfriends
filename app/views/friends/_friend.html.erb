@@ -1,0 +1,23 @@
+<tr id="<%= dom_id friend %>">
+  <td>
+    <% @full_name = friend.first_name + " " + friend.last_name %>
+    <%= link_to @full_name, friend %> 
+
+  </td>
+
+  <td>
+    <%= friend.email %>
+  </td>
+
+  <td>
+    <%= friend.phone %>
+  </td>
+
+  <td>
+    <%= friend.twitter %>
+  </td>
+    <td>
+    <% showUser = friend.user_id - 1 %>
+    <%= @gimme_user[showUser].first_name %>
+  </td>
+
