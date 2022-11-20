@@ -1,24 +1,8 @@
-# README
+# Railsfriends
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+My first RAILS application.
 
-Things you may want to cover:
+Currently testing and playing around with Rails.
+Uses Devise for login management.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Meant to be themed around .hack//

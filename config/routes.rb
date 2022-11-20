@@ -7,7 +7,8 @@ resources :users#, :only => [:show]
 
 devise_scope :user do
   authenticated :user do
-    root 'home#index', as: :authenticated_root
+    #root 'home#index', as: :authenticated_root
+    root 'friends#index', as: :authenticated_root
   end
 
   unauthenticated do
